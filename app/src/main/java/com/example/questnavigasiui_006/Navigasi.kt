@@ -9,6 +9,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.questnavigasiui_006.view.FormIsian
+import com.example.questnavigasiui_006.view.TampilanData
 
 enum class Navigasi {
     Formulirku,
@@ -33,7 +34,7 @@ fun DataApp(
                 )
             }
             composable(route = Navigasi.Detail.name) {
-                TampilData(
+                TampilanData(
                     onBackBtnClick = {
                         cancelAndBackToFormulir(navController)
                     }
@@ -43,10 +44,7 @@ fun DataApp(
     }
 }
 
-@Composable
-fun TampilData(onBackBtnClick: () -> Unit) {
-    TODO("Not yet implemented")
-}
+
 
 private fun cancelAndBackToFormulir(
     navController: NavHostController

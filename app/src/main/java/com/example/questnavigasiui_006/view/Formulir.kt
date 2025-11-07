@@ -53,7 +53,7 @@ fun FormIsian(
                     .padding(top = 20.dp)
                     .width(width = 250.dp),
                 label = { Text(text = "Nama Lengkap") },
-                onValueChange = {},
+                onValueChange = {}
             )
             HorizontalDivider(
                 modifier = Modifier
@@ -91,7 +91,7 @@ fun FormIsian(
             Button(
                 modifier = Modifier.fillMaxWidth(1f)
                     .padding(all = 25.dp),
-                onClick = { OnSubmitBtnClick }
+                onClick = OnSubmitBtnClick
             ) {
                 Text(stringResource(id = R.string.submit))
             }
