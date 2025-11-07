@@ -43,3 +43,13 @@ fun DataApp(
     }
 }
 
+@Composable
+fun TampilData(onBackBtnClick: () -> Unit) {
+    TODO("Not yet implemented")
+}
+
+private fun cancelAndBackToFormulir(
+    navController: NavHostController
+){
+    navController.popBackStack(route = Navigasi.Formulirku.name, inclusive = false)
+}
